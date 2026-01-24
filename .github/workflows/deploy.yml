@@ -43,4 +43,4 @@ jobs:
         run: |
           cmod +x scripts/health_check.sh
           sleep 10
-          ./scripts/health_check.sh http://3.239.116.53:5000/
+          ./tests/health_check.sh http://3.239.116.53:5000/
