@@ -27,11 +27,14 @@ jobs:
     needs: build-and-push
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
       - name: Deploy to AWS EC2
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST_DNS }}  
-          username: ${{ secrets.USERNAME }} 
+          host: ${{ secrets.HOST_DNS }}
+          username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd devops_first-pet-project
@@ -41,6 +44,6 @@ jobs:
             sudo docker image prune -f
       - name: Run Health Check
         run: |
-          cmod +x scripts/health_check.sh
-          sleep 10
+          chmod +x tests/health_check.sh
+          sleep 15
           ./tests/health_check.sh http://3.239.116.53:5000/

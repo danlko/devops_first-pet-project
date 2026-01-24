@@ -35,7 +35,7 @@ def hello_devops():
     cursor.close()
     connection.close()
 
-    return jsonify("HELLO MY LITTLE GIT!")
+    return jsonify("HELLO MIE LITTLE GIT!")
 
 if __name__ == "__main__":
     app.run(host = "0.0.0.0", port=5000)
