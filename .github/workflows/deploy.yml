@@ -39,4 +39,8 @@ jobs:
             sudo docker compose pull
             sudo docker compose up -d --build
             sudo docker image prune -f
-
+      - name: Run Health Check
+        run: |
+          cmod +x scripts/health_check.sh
+          sleep 10
+          ./scripts/health_check.sh http://3.239.116.53:5000/
