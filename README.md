@@ -27,11 +27,12 @@ This is project was built to gain experience in CI/CD, DevOps-role, QA-role and 
 ## Launch
 1. **AWS Setup:** Create a t3.micro instance.
 2. **Security:** Ensure port 5000 is open in Security Groups.
+   <img width="1432" height="28" alt="image" src="https://github.com/user-attachments/assets/0cb7f856-ab52-4db7-a2ba-644028cbbff2" />
 3. **CI/CD:** Add the necessary secrets (DOCKER_PASSWORD, DDOCKER_USERNAME, EC2_SSH_KEY, HOST_DNS, USERNAME) to the repository settings (Secrets and variables -> Actions).
 4. **Deploy:** Run ***"git push origin main"***.
-<img width="1432" height="28" alt="image" src="https://github.com/user-attachments/assets/0cb7f856-ab52-4db7-a2ba-644028cbbff2" />
 
 
+## Conclusion
 The work was done with the aim of exploring the idea of the algorithm's operation on real projects, understanding its essentials, and building a vision of a pipeline that is as close to reality as possible.
 
 
