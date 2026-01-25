@@ -33,6 +33,8 @@ This is project was built to gain experience in CI/CD, DevOps-role, QA-role and 
 
 
 ## Conclusion
+  <img width="444" height="167" alt="image" src="https://github.com/user-attachments/assets/8e2640a8-da6f-4ff3-b226-9315e35ed43f" />
+
 The work was done with the aim of exploring the idea of the algorithm's operation on real projects, understanding its essentials, and building a vision of a pipeline that is as close to reality as possible.
 
 
