@@ -1,6 +1,6 @@
 # End to end CI/CD
 
-This is project was built to gain experience in CI/CD, DevOps-role, QA-role and gain knowledge computer networks fields.
+This project was created to gain experience in CI/CD, DevOps-role, QA-role and gain knowledge computer networks fields.
 
 ## Technology stack:
 - **Infrastructure:** Terraform (AWS EC2, VPC, Security Groups)
@@ -18,10 +18,10 @@ This is project was built to gain experience in CI/CD, DevOps-role, QA-role and 
 4. **QA:** After deployment, an automatic availability testing script is launched. (Smoke Test)
 
 ## Repository structure
-- /terraform - infrastructure configuration files.
+- /terraform - infrastructure.
 - /.github/workflows - automation pipeline description.
-- /app - Python source code of the application.
-- /tests - scripts for automatic performance testing.
+- /app - Python code of the application.
+- /tests - scripts for testing.
 - Dockerfile & docker-compose.yml - containerization configuration.
 
 ## Launch
