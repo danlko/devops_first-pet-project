@@ -4,7 +4,7 @@ import os
 from datetime import datetime
 
 
-app = Flask(__name_
+app = Flask(__name__)
 
 def get_connection():
     return psycopg2.connect(
@@ -35,7 +35,7 @@ def hello_devops():
     cursor.close()
     connection.close()
 
-    return jsonify("HELLO MIE LITTLE GIT!")
+    return jsonify("HELLO MIE LITTLE GITTICATS!")
 
 if __name__ == "__main__":
     app.run(host = "0.0.0.0", port=5000)
