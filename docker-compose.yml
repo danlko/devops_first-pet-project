@@ -1,17 +1,16 @@
 services:
   db:
     image: postgres:16
-    restart: always
     environment:
       POSTGRES_DB: ${DB_NAME}
       POSTGRES_USER: ${DB_USER}
       POSTGRES_PASSWORD: ${DB_PASSWORD}
     volumes:
-      - pgdata:/var/lib/postgressql/data
+      - pgdata:/var/lib/postgresql/data
     ports:
       - "5432:5432"
   app:
-    build: .
+    image: grechnyil/devops_first_pet_project:latest
     ports:
       - "5000:5000"
     environment:
