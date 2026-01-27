@@ -28,7 +28,7 @@ This project was created to gain experience in CI/CD, DevOps-role, QA-role and g
 1. **AWS Setup:** Create a t3.micro instance.
 2. **Security:** Ensure port 5000 is open in Security Groups.
    <img width="1432" height="28" alt="image" src="https://github.com/user-attachments/assets/0cb7f856-ab52-4db7-a2ba-644028cbbff2" />
-3. **CI/CD:** Add the necessary secrets (DOCKER_PASSWORD, DOCKER_USERNAME, EC2_SSH_KEY, HOST_DNS, USERNAME) to the repository settings (Secrets and variables -> Actions).
+3. **CI/CD:** Add the necessary secrets (DOCKER_PASSWORD, DOCKER_USERNAME, EC2_SSH_KEY, HOST_DNS, USERNAME) to the repository settings (Secrets and variables -> Actions). + pre-commits`local chmod +x tests/install.sh`, `./tests/install.sh`
 4. **Deploy:** Run ***"git push origin main"***.
 
 
